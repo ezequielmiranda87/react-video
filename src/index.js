@@ -1,3 +1,9 @@
+/* index.js -> Main app file
+** This file "index.js" is the main file application
+** this code load dependencies, import the main component, main style file.
+** Then render the main component inside of a html element
+*/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
