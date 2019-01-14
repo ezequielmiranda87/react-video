@@ -7,7 +7,12 @@ class Media extends Component{
 
     constructor(props){
         super(props)       
-        //this.handleClick = this.handleClick.bind(this) 
+        /*
+            this.state = {
+                author: props.author,
+            }
+            this.handleClick = this.handleClick.bind(this) 
+        */
     }
 
     static propTypes = {
@@ -18,6 +23,7 @@ class Media extends Component{
 
     state = {
         component: 'Media',
+        author: 'Thom'
     }
 
 
@@ -25,7 +31,10 @@ class Media extends Component{
     // Using Arrow function, we don't need bind the context
     // ES7 Arrow function always inherit the parent context
     //console.log(this) // Media 
-    console.log(this.props.image)
+    //console.log(this.props.image)
+    this.setState({
+        author: 'Thom Yorke'
+    })
     }
 
     render(){
@@ -51,7 +60,7 @@ class Media extends Component{
                         height={160}
                     />
                     <h3 className="Media-title">{this.props.title}</h3>
-                    <p className="Media-author">{this.props.author}</p>
+                    <p className="Media-author">{this.state.author}</p>
                 </div>
             </div>
         )
