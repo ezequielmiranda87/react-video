@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-
 import './media.css'
 
 class Media extends Component{
@@ -22,8 +21,7 @@ class Media extends Component{
     }
 
     state = {
-        component: 'Media',
-        author: 'Thom'
+
     }
 
 
@@ -32,9 +30,8 @@ class Media extends Component{
     // ES7 Arrow function always inherit the parent context
     //console.log(this) // Media 
     //console.log(this.props.image)
-    this.setState({
-        author: 'Thom Yorke'
-    })
+    alert("Click")
+
     }
 
     render(){
@@ -60,7 +57,7 @@ class Media extends Component{
                         height={160}
                     />
                     <h3 className="Media-title">{this.props.title}</h3>
-                    <p className="Media-author">{this.state.author}</p>
+                    <p className="Media-author">{this.props.author}</p>
                 </div>
             </div>
         )

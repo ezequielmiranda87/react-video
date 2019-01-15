@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Media from './playlist/components/media'
+import Playlist from './playlist/components/playlist';
+import data from './data/api.json'
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -12,12 +14,11 @@ class App extends Component {
         </header>
 
         <div className="App-content">
-        <Media title="¿Porqué aprender React?" author="Ezex" image="/images/covers/bitcoin.jpg"></Media>
-          <Media  type="video"title="¿Porqué aprender React?" author="Ezex" image="/images/covers/bitcoin.jpg"></Media>
+          <Playlist data= {data}/>
         </div>
 
         <footer>
-
+º
         </footer>
       </div>
     );
