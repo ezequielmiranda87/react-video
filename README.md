@@ -3,6 +3,7 @@
 
 ## Structure application
 ==========================
+
 App.js - entry point application (webpack entry file)
 
 Home - Page / (container | smart)
