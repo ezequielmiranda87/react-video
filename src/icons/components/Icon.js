@@ -5,6 +5,7 @@ function Icon(props){
         color,
         size, 
     } = props
+    
     return(
         <svg
             height = {size}
