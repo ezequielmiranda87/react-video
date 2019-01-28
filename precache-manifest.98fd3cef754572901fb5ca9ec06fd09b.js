@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/react-video/static/js/runtime~main.025a20c9.js"
   },
   {
-    "revision": "66e4ae83f6e8dbb32e66",
-    "url": "/react-video/static/js/main.66e4ae83.chunk.js"
+    "revision": "fdf5e7a17fa25f4ca1e7",
+    "url": "/react-video/static/js/main.fdf5e7a1.chunk.js"
   },
   {
     "revision": "553a7ff5e150c9d69c41",
     "url": "/react-video/static/js/1.553a7ff5.chunk.js"
   },
   {
-    "revision": "66e4ae83f6e8dbb32e66",
+    "revision": "fdf5e7a17fa25f4ca1e7",
     "url": "/react-video/static/css/main.59e1afdf.chunk.css"
   },
   {
-    "revision": "57dbf6a892df407394f704d952a87cf3",
+    "revision": "fa68f3e30f5c54dc08e63df974f3447d",
     "url": "/react-video/index.html"
   }
 ];
