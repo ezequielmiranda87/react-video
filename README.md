@@ -1,8 +1,10 @@
 ## React-video
-===============
+===
+Access to the proyect live [here](ttps://ezequielmiranda87.github.io/react-video/)
+
 
 ## Structure application
-==========================
+===
 
 App.js - entry point application (webpack entry file)
 
