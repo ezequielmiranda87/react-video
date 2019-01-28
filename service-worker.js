@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ezequielmiranda87/react-video/precache-manifest.5d6035ae063764fc491ed29c62068082.js"
+  "/react-video/precache-manifest.80da70feb60fab7b5a3608048c281f19.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/ezequielmiranda87/react-video/index.html", {
+workbox.routing.registerNavigationRoute("/react-video/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

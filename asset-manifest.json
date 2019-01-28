@@ -1,13 +1,13 @@
 {
-  "main.css": "/ezequielmiranda87/react-video/static/css/main.59e1afdf.chunk.css",
-  "main.js": "/ezequielmiranda87/react-video/static/js/main.ef91719e.chunk.js",
-  "main.js.map": "/ezequielmiranda87/react-video/static/js/main.ef91719e.chunk.js.map",
-  "static/js/1.553a7ff5.chunk.js": "/ezequielmiranda87/react-video/static/js/1.553a7ff5.chunk.js",
-  "static/js/1.553a7ff5.chunk.js.map": "/ezequielmiranda87/react-video/static/js/1.553a7ff5.chunk.js.map",
-  "runtime~main.js": "/ezequielmiranda87/react-video/static/js/runtime~main.d36d8421.js",
-  "runtime~main.js.map": "/ezequielmiranda87/react-video/static/js/runtime~main.d36d8421.js.map",
-  "static/css/main.59e1afdf.chunk.css.map": "/ezequielmiranda87/react-video/static/css/main.59e1afdf.chunk.css.map",
-  "index.html": "/ezequielmiranda87/react-video/index.html",
-  "precache-manifest.5d6035ae063764fc491ed29c62068082.js": "/ezequielmiranda87/react-video/precache-manifest.5d6035ae063764fc491ed29c62068082.js",
-  "service-worker.js": "/ezequielmiranda87/react-video/service-worker.js"
+  "main.css": "/react-video/static/css/main.59e1afdf.chunk.css",
+  "main.js": "/react-video/static/js/main.66cf9325.chunk.js",
+  "main.js.map": "/react-video/static/js/main.66cf9325.chunk.js.map",
+  "static/js/1.553a7ff5.chunk.js": "/react-video/static/js/1.553a7ff5.chunk.js",
+  "static/js/1.553a7ff5.chunk.js.map": "/react-video/static/js/1.553a7ff5.chunk.js.map",
+  "runtime~main.js": "/react-video/static/js/runtime~main.025a20c9.js",
+  "runtime~main.js.map": "/react-video/static/js/runtime~main.025a20c9.js.map",
+  "static/css/main.59e1afdf.chunk.css.map": "/react-video/static/css/main.59e1afdf.chunk.css.map",
+  "index.html": "/react-video/index.html",
+  "precache-manifest.80da70feb60fab7b5a3608048c281f19.js": "/react-video/precache-manifest.80da70feb60fab7b5a3608048c281f19.js",
+  "service-worker.js": "/react-video/service-worker.js"
 }
