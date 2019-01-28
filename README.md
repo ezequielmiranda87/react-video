@@ -1,6 +1,6 @@
 ## React-video
 ===
-Access to the proyect live [here](ttps://ezequielmiranda87.github.io/react-video/)
+Access to the proyect live [here](https://ezequielmiranda87.github.io/react-video/)
 
 
 ## Structure application
