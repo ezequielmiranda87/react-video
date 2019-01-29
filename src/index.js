@@ -13,8 +13,9 @@ import data from './data/api.json'
 
 // Here we should have different entry point for each page Home/-home.js|
 
+const homeContainer = document.getElementById('home-container');
 
-ReactDOM.render(<Home data = {data}/>, document.getElementById('root'));
+ReactDOM.render(<Home data = {data}/>, homeContainer);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
