@@ -12,6 +12,7 @@ function Playlist(props){
         <div className="Playlist">
         {props.playlist.map((element, index)=>{
             return <Media 
+                        handleClick = {props.handleOpenModal}
                         key={index}
                         title={element.title}
                         author= {element.author}
