@@ -4,6 +4,7 @@ import Categories from '../../categories/components/categories';
 import Related from '../components/related';
 import ModalCotainer from '../../widgets/container/modal'
 import Modal from '../../widgets/components/modal'
+import HandleError from '../../error/containers/handle-error'
 
 class Home extends Component{
 
@@ -24,27 +25,30 @@ class Home extends Component{
             modalVisible: false,
         })
     }
+
     render(){
         return(
             <div>
-                <HomeLayout>
-                    <Related/>
-                    <Categories
-                        handleOpenModal = {this.handleOpenModal}
-                        categories={this.props.data.categories}
-                        />
-                    {
-                        // If 
-                        this.state.modalVisible &&
-                        <ModalCotainer>
-                            <Modal
-                                handleClick= {this.handleCloseModal}
-                            >
-                                <h1>Esto es un Portal</h1>
-                            </Modal>
-                        </ModalCotainer>
-                    }
-                </HomeLayout>
+                <HandleError>
+                    <HomeLayout>
+                        <Related/>
+                        <Categories
+                            categories={this.props.data.categories}
+                            handleOpenModal = {this.handleOpenModal}
+                            />
+                        {
+                            // If 
+                            this.state.modalVisible &&
+                            <ModalCotainer>
+                                <Modal
+                                    handleClick= {this.handleCloseModal}
+                                >
+                                    <h1>Esto es un Portal</h1>
+                                </Modal>
+                            </ModalCotainer>
+                        }
+                    </HomeLayout>
+                </HandleError>
             </div>
         )
     }
