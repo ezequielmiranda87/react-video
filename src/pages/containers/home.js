@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import HomeLayout from '../components/home-layout';
 import Categories from '../../categories/components/categories';
 import Related from '../components/related';
-import ModalCotainer from '../../widgets/container/modal'
-import Modal from '../../widgets/components/modal'
-import HandleError from '../../error/containers/handle-error'
+import ModalCotainer from '../../widgets/container/modal';
+import Modal from '../../widgets/components/modal';
+import HandleError from '../../error/containers/handle-error';
+import VideoPlayer from '../../player/containers/video-player';
 
 class Home extends Component{
 
@@ -32,6 +33,7 @@ class Home extends Component{
                 <HandleError>
                     <HomeLayout>
                         <Related/>
+                        <VideoPlayer></VideoPlayer>
                         <Categories
                             categories={this.props.data.categories}
                             handleOpenModal = {this.handleOpenModal}
