@@ -25,10 +25,10 @@ class SearchContainer extends Component{
     render(){
         return(
             <Search
-            handleSubmit={this.handleSubmit}
-            setRef = {this.setInputRef}
-            handleChange = {this.handleInputChange}
-            value={this.state.value}
+                handleSubmit={this.handleSubmit}
+                setRef = {this.setInputRef}
+                handleChange = {this.handleInputChange}
+                value={this.state.value}
             >
             </Search>
         )

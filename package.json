@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://ezequielmiranda87.github.io/react-video/",
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
@@ -15,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

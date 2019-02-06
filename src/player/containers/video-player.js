@@ -14,7 +14,6 @@ class VideoPlayer extends Component{
                 <Title
                 title="Esto Es un titulo"
                 >
-
                 </Title>
                     <Video
                         autoplay = {false}
