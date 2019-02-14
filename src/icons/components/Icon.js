@@ -13,8 +13,6 @@ function Icon(props){
             fill= {color}
             viewBox="0 0 32 32"
         >
-            {console.log("HI")}
-            {console.log(props.children)}
             {props.children}
         </svg>
     )

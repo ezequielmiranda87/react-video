@@ -34,7 +34,7 @@ class Home extends Component{
                     <HomeLayout>
                         <Related/>
                         <VideoPlayer 
-                        autoplay  = {true} // Si pasamos solo autoplay, pasa por defecto true
+                        autoplay  = {false} // Si pasamos solo autoplay, pasa por defecto true
                         />
                         <Categories
                             categories={this.props.data.categories}
