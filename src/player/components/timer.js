@@ -3,7 +3,7 @@ import './timer.css'
 
 function ledtPad(number){
     const pad = '00';
-    return pad.substr(0,pad.length - number.length) + number;
+    return pad.substr(0,pad.length - number.length) + number; // "0" + "1"
 }
 
 function formattedTime(secs){
