@@ -2,6 +2,7 @@ import React from  'react';
 import Playlist from '../../playlist/components/playlist'
 import './category.css'
 
+
 function Category(props){
     return(
         <div className="Category">

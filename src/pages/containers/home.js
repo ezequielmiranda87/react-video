@@ -14,9 +14,10 @@ class Home extends Component{
     }
 
     // This handle has to be passed to media component
-    handleOpenModal = (event) => {
+    handleOpenModal = (media) => {
         this.setState({
             modalVisible:true,
+            media,
         })
     }
 
@@ -33,9 +34,6 @@ class Home extends Component{
                 <HandleError>
                     <HomeLayout>
                         <Related/>
-                        <VideoPlayer 
-                        autoplay  = {false} // Si pasamos solo autoplay, pasa por defecto true
-                        />
                         <Categories
                             categories={this.props.data.categories}
                             handleOpenModal = {this.handleOpenModal}
@@ -47,7 +45,11 @@ class Home extends Component{
                                 <Modal
                                     handleClick= {this.handleCloseModal}
                                 >
-                                    <h1>Esto es un Portal</h1>
+                                    <VideoPlayer 
+                                        autoplay  = {false} // Si pasamos solo autoplay, pasa por defecto true
+                                        src = {this.state.media.src}
+                                        title = {this.state.media.title}
+                                    />
                                 </Modal>
                             </ModalCotainer>
                         }

@@ -18,7 +18,8 @@ function Playlist(props){
                         title={element.title}
                         author= {element.author}
                         image= {element.cover}
-                        handleClick = {props.handleOpenModal}                        
+                        src = {element.src}
+                        openModal = {props.handleOpenModal}                        
                     />
         })}
         

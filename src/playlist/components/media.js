@@ -26,12 +26,11 @@ class Media extends PureComponent{
 
 
     handleClick = (e)=>{
+    this.props.openModal(this.props);
     // Using Arrow function, we don't need bind the context
     // ES7 Arrow function always inherit the parent context
     //console.log(this) // Media 
     //console.log(this.props.image)
-    alert("Click")
-
     }
 
     render(){
@@ -48,7 +47,7 @@ class Media extends PureComponent{
         }
         */
         return(
-            <div className="Media" onClick={this.props.handleClick}> 
+            <div className="Media" onClick={this.handleClick}> 
                 <div className="Media-cover">
                     <img className="Media-image"
                         src={this.props.image}

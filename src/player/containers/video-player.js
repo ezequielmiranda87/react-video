@@ -7,7 +7,8 @@ import Timer from '../components/timer'
 import Controls from '../components/video-player-controls'
 import ProgressBar from '../components/progress-bar'
 import Spinner from '../components/spinner'
-
+import Volume from '../components/volume'
+import FullScreen from '../components/full-screen'
 
 class VideoPlayer extends Component{
 
@@ -16,6 +17,9 @@ class VideoPlayer extends Component{
         duration: 0,
         currentTime: 0,
         loading: false,
+        volume: 0.5,
+        lastVolume: 0.5
+
     }
 
     togglePlay = (event) =>{
@@ -59,12 +63,32 @@ class VideoPlayer extends Component{
         })
     }
 
+    handleVolumeChange = event => {
+        this.video.volume = event.target.value;
+    }
+
+    handleFullScreenClick = event => {
+        if(document.webkitIsFullScreen || document.mozFullScreen){
+            document.webkitExitFullscreen();
+        } else {
+            this.player.webkitRequestFullScreen();
+            //console.log(this.player)
+        }
+    }
+
+    setRef = element => {
+        this.player = element;
+    }
+
+      
     render(){
         return(
-            <VideoPlayerLayout>
+            <VideoPlayerLayout
+                setRef = {this.setRef}
+            >
 
                 <Title
-                title="Esto Es un titulo"
+                title = {this.props.title}
                 >
                 </Title>
                     <Controls>
@@ -83,6 +107,13 @@ class VideoPlayer extends Component{
                             handleProgressChange={ this.handleProgressChange}
                         />
 
+                        <Volume
+                        handleVolumeChange = {this.handleVolumeChange}
+                        />
+
+                        <FullScreen
+                        handleFullScreenClick = {this.handleFullScreenClick}
+                        />
                     </Controls>
                     <Spinner
                         active = {this.state.loading}
@@ -94,7 +125,7 @@ class VideoPlayer extends Component{
                         handleTimeUpdate = {this.handleTimeUpdate}
                         handleSeeking = {this.handleSeeking}
                         handleSeeked = {this.handleSeeked}
-                        src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
+                        src = {this.props.src}
 
                     />
 
