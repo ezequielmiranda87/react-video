@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import HomeLayout from '../components/home-layout';
-import Categories from '../../categories/components/categories';
 import Related from '../components/related';
+import Header from '../components/header';
+import Categories from '../../categories/components/categories';
+
+
 import ModalCotainer from '../../widgets/container/modal';
 import Modal from '../../widgets/components/modal';
 import HandleError from '../../error/containers/handle-error';
@@ -32,6 +35,7 @@ class Home extends Component{
         return(
             <div>
                 <HandleError>
+                    <Header/>
                     <HomeLayout>
                         <Related/>
                         <Categories

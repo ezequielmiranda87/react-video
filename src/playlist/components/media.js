@@ -1,5 +1,13 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 import './media.css'
 
 class Media extends PureComponent{
@@ -7,9 +15,6 @@ class Media extends PureComponent{
     constructor(props){
         super(props)       
         /*
-            this.state = {
-                author: props.author,
-            }
             this.handleClick = this.handleClick.bind(this) 
         */
     }
@@ -20,32 +25,48 @@ class Media extends PureComponent{
         type: PropTypes.oneOf(['video', 'audio'])
     }
 
-    state = {
-
-    }
-
-
     handleClick = (e)=>{
-    this.props.openModal(this.props);
-    // Using Arrow function, we don't need bind the context
-    // ES7 Arrow function always inherit the parent context
-    //console.log(this) // Media 
-    //console.log(this.props.image)
+        this.props.openModal(this.props);
     }
 
     render(){
-        /*
-        const styles = {
-            container: {
-                fontSize: '14px',
-                backgroundColor: 'white',
-                color:'#44546b',
-                cursor: 'pointer',
-                width: '260px',
-                border: '1px solid red'
-            }
-        }
-        */
+        return(
+            <div className="Media" onClick={this.handleClick} >
+                <Card className="Card">
+                <CardActionArea>
+                <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image={this.props.image}
+                    title={this.props.title}
+                    width={260}
+                    height={160}
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="subtitle1" component="h2">
+                        {this.props.title}
+                    </Typography>
+                    <Typography variant="subtitle1" color="textSecondary">
+                    {this.props.author}
+                    </Typography>
+                </CardContent>
+                </CardActionArea>
+                <CardActions>
+                <Button size="small" color="primary">
+                    Share
+                </Button>
+                <Button size="small" color="primary">
+                    Learn More
+                </Button>
+                </CardActions>
+            </Card>
+          </div>
+        )
+    }
+
+
+/*     render(){
         return(
             <div className="Media" onClick={this.handleClick}> 
                 <div className="Media-cover">
@@ -60,7 +81,7 @@ class Media extends PureComponent{
                 </div>
             </div>
         )
-    }
+    } */
 }
 
 export default Media;
